@@ -1,0 +1,264 @@
+﻿.menu li
+{
+    float: left;
+    background: coral;
+    list-style: none;
+    margin: -1px;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+    border: 2px solid black;
+}
+
+.menu
+{
+    display: flex;
+}
+
+.menu ul
+{
+    margin: 50px auto;
+}
+
+.menu li:hover:not(#active)
+{
+    background: gold;
+}
+
+body
+{
+    background: url("img/hatter.jpg") no-repeat fixed;
+    background-size: auto;
+    -webkit-background-size: cover;
+    font-family: Bahnschrift, serif;
+}
+
+.menu a
+{
+    display: block;
+    padding: 12%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+#active
+{
+    background: brown;
+}
+
+hr
+{
+    width: 60%;
+    border: 1px solid black;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.container
+{
+    text-align: justify;
+    margin: 50px auto;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 50%;
+    padding: 2em 0 6em 0;
+    background: wheat;
+}
+
+p, h2
+{
+    width: 60%;
+    margin: auto;
+}
+
+h2
+{
+    margin: 55px auto 10px auto;
+}
+
+.nev
+{
+    color: cadetblue;
+    
+}
+
+.nev:hover
+{
+    color: gray;
+    cursor: pointer;
+}
+
+.img
+{
+    background: rgba(60, 75, 75, 0.9);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.back
+{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: darkgray;
+}
+
+
+.back:hover
+{
+    cursor: pointer;
+    color: black;
+}
+
+.link a
+{
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.link a:hover
+{
+    color: gray;
+}
+
+.container img
+{
+    float: right;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+#isten-szama
+{
+    margin: 50px auto;
+    padding: 1em;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.becslo
+{
+    text-align: left;
+    padding: 0 15px;
+}
+
+.ev, .szam
+{
+    padding: 0.5em;
+    
+}
+#isten-szama td, th
+{
+    height: 25px;
+    border: 2px solid black;
+}
+
+#isten-szama th
+{
+    background: darksalmon;
+}
+
+.paratlan
+{
+    background: coral;
+}
+
+.ev
+{
+    background: lightsalmon;
+}
+
+.kocka, .egyeb
+{
+    margin: 15px auto 0 auto;
+}
+
+.kocka, .egyeb tr
+{
+    text-align: center;
+}
+
+.forrasok, .forrasok ul
+{
+    list-style-type: none;
+}
+
+.forrasok ul li:before
+{
+    content: "-";
+    display: inline-block;
+    position: relative;
+    left: -7px;
+    top: -1px;
+}
+
+.forrasok a
+{
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.forrasok a:hover
+{
+    color: gray;
+}
+
+.forrasok
+{
+    margin: 70px auto 0 auto;
+    width: 36%;
+}
+
+
+.ranglista
+{
+    margin: 50px auto 0 auto;
+    padding: 1em;
+    width: 25%;
+    background: lightsalmon;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+#rubikkockakep
+{
+    display: block;
+    width: 250px;
+    float: none;
+    margin: 50px auto 0 auto;
+}
+
+#valtozatlink
+{
+    color: cadetblue;
+    text-decoration: none;
+}
+
+#valtozatlink:hover
+{
+    color: gray;
+}

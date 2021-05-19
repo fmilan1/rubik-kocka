@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <title>Rubik-kocka</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="tortenete.html">Története</a></li>
+            <li id="active"><a href="rekordok.html">Rekordok</a></li>
+            <li><a href="mukodese.html">Működése</a></li>
+            <li><a href="valtozatai.html">Változatai</a></li>
+            <li><a href="forrasok.html">Források</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        
+        <h1>Rekordok</h1>
+        <hr>
+        <h2>Személyek</h2>
+        <p>
+            A 3x3x3-as kocka kirakásának legjobb idejét <span class="nev" onclick="showyusheng()">Yusheng Du</span> tartja, aki 3,47 másodperc alatt rakta ki 2018. november 24-én.
+        </p>
+        
+        <p>
+            <br>
+            Viszont az átlagos kirakási idők rekordját <span class="nev" onclick="showfeliks()">Feliks Zemdegs</span> tartja, 2019-ben egy versenyen 5,53 másodperces átlaggal tudta kirakni a Rubik-kockát.
+        </p>
+        
+        <p>
+            <br>
+            2012-ben magyar világcsúcs született az Európa Rubik-kocka bajnokságon. <span class="nev" onclick="showEndrey()">Endrey Marcell</span> a 3x3x3 vakon kirakás kategóriában 26,36 másodperc alatt rakta ki a kockát.
+        </p>
+        
+        <div class="ranglista">
+            Ranglista
+            <ol>
+                <li>Yusheng Du</li>
+                <li>Feliks Zemdegs</li>
+                <li>Patrick Ponce</li>
+                <li>Nicolás Sánchez</li>
+                <li>Max Park</li>
+                <li>Lukas Shelley</li>
+                <li>Juliette Sébastien</li>
+                <li>Ruihang Xu</li>
+                <li>Tymon Kolasiński</li>
+                <li>Jakub Kipa</li>
+            </ol>
+        </div>
+        
+        <h2>Robotok</h2>
+        <p>
+            Manapság nem csak emberek szeretnék megdönteni a világrekordot. Rendkívül elterjedtek a <span class="link"><a
+                href="https://hu.wikipedia.org/wiki/LEGO" target="_blank">Legoból</a></span> épített robotok. Ezeket a robotokat leginkább okostelefonokról írányítják és algoritmusokat futtatnak a roboton, hogy a kocka kirakott állapotába kerüljön. A jelenleg ismert leggyorsabb Legorobot által felállított rekord 3,253 másodperc.
+        </p>
+        
+        <p>
+            <br>
+            Azonban léteznek nem Legoból épített robotok is, amik lényegesen gyorsabbak Legoból készült társaiknál. Ezek már 1 másodperc alatt is képesek kirakni a kockát.
+        </p>
+    </div>
+    <div id="yusheng" class="img">
+        <span onclick="showyusheng()" class="back">Vissza</span>
+        <img src="img/yusheng-du-record.jpg" alt="Yusheng Du">
+    </div>
+
+    <div id="feliks" class="img">
+        <span onclick="showfeliks()" class="back">Vissza</span>
+        <img src="img/feliks-zemdegs.jpg" alt="Feliks Zemdegs" height="473">
+    </div>
+
+    <div id="endrey" class="img">
+        <span onclick="showEndrey()" class="back">Vissza</span>
+        <img src="img/endrey-marcell.jpg" alt="Endrey Marcell" height="473">
+    </div>
+
+    <script>
+        let yushengIMG = document.getElementById("yusheng");
+        let yushengVisible = false;
+        function showyusheng()
+        {
+            
+            document.documentElement.scrollTop = 0;
+            yushengVisible = !yushengVisible;
+            if (yushengVisible)
+            {
+                document.body.style.overflow = "hidden";
+                yushengIMG.style.display = "block" ;
+            }
+            else
+            {
+                document.body.style.overflow = "initial";
+                yushengIMG.style.display = "none"
+            }
+            
+        }
+
+        let feliks = document.getElementById("feliks");
+        let feliksVisible = false;
+        function showfeliks()
+        {
+            document.documentElement.scrollTop = 0;
+            feliksVisible = !feliksVisible;
+            if (feliksVisible)
+            {
+                document.body.style.overflow = "hidden";
+                feliks.style.display = "block"
+            }
+            else
+            {
+                document.body.style.overflow = "initial";
+                feliks.style.display = "none"
+            }
+        }
+
+        let endrey = document.getElementById("endrey");
+        let endreyVisible = false;
+        function showEndrey()
+        {
+            document.documentElement.scrollTop = 0;
+            endreyVisible = !endreyVisible;
+            if (endreyVisible)
+            {
+                document.body.style.overflow = "hidden";
+                endrey.style.display = "block"
+            }
+            else
+            {
+                document.body.style.overflow = "initial";
+                endrey.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
